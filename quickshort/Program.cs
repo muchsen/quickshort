@@ -1,4 +1,8 @@
-﻿namespace QuickShort
+﻿using System
+using System.Runtime.Serialization.Formatters;
+using System.Security.Cryptography;
+using System.Xml;
+namespace QuickShort
 {
     class Program
     {
@@ -34,8 +38,19 @@
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
-
+         
+            
+            
         }
+        //swaps the element at index x with the elemnts at index y
+        void swap(int x, int y)
+        {
+            int temp;
+            temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
+        }
+
 
     }
 }
